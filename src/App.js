@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Button from '@material-ui/core/Button';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import Card from '@material-ui/core/Card';
+
 
 const App = () => {
   // Initialize state
@@ -18,10 +20,9 @@ const App = () => {
       <div className="App">
 
           <h1>Welcome to my portfolio page!</h1>
-          <h3>My name is Connor Simmonds.<br></br>I'm a third year SWEN student at Victoria University of Wellington.</h3>
+          <h3>My name is Connor Simmonds.<br></br>I'm a fourth year SWEN student at Victoria University of Wellington.</h3>
 
           <h4>Below are a few projects I've made.</h4>
-
           {
               projects.length ? (
                 projects.map((project) => (
@@ -36,12 +37,14 @@ const App = () => {
               ))
               ) : (
                   <div>
-                      Loading projects..
+                      <CircularProgress />
                   </div>
               )
           }
       </div>
   );
 }
+
+
 
 export default App;
