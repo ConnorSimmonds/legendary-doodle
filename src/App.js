@@ -22,9 +22,9 @@ const App = () => {
           <h1>Welcome to my portfolio page!</h1>
           <div className="dialogue">
           <Avatar alt="Connor Simmonds" src="/images/avatar/1.jpg" className="dialogueAvatar"/>
-          <div className="dialogueCard">
+          <Card className="dialogueCard">
           <h3>My name is Connor Simmonds.<br></br>I'm a fourth year SWEN student at Victoria University of Wellington.</h3>
-          </div>
+          </Card>
           </div>
           <h4>Below are a few GitHub projects.</h4>
           {
