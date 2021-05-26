@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.dialogue {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.dialogueCard {
+  width: 400px;
+}
+
+.dialogueAvatar {
+  vertical-align: middle
+  
+}
