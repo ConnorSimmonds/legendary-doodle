@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import DescriptionCard from './Components/DescriptionCard';
 
 const App = () => {
   // Initialize state
@@ -32,8 +31,9 @@ const App = () => {
                     href={project.html_url}>
                     {project.name}
                   </Button>
-                  <DescriptionCard description = {project.description}></DescriptionCard>
+                  <p>{project.description}</p>
               </div>
+              
               ))
               ) : (
                   <div>
@@ -41,6 +41,8 @@ const App = () => {
                   </div>
               )
           }
+
+          <p>The source for this site can be found either in the above projects, or <a href="https://github.com/ConnorSimmonds/legendary-doodle">here</a>.</p>
       </div>
   );
 }
