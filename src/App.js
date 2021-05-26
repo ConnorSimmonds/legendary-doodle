@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import Card from '@material-ui/core/Card';
-
+import DescriptionCard from './Components/DescriptionCard';
 
 const App = () => {
   // Initialize state
   const [ projects, setProjects ] = useState([]);
+
 
   // Get projects
   useEffect(() => {
@@ -28,11 +28,11 @@ const App = () => {
                 projects.map((project) => (
                   <div style={{padding: 10}} key={project.name}>
                   <Button 
-                      variant="contained"
-                      href={project.html_url}>
-                      {project.name}
+                    variant="contained"
+                    href={project.html_url}>
+                    {project.name}
                   </Button>
-                  <p>{project.description}</p>
+                  <DescriptionCard description = {project.description}></DescriptionCard>
               </div>
               ))
               ) : (
@@ -44,7 +44,5 @@ const App = () => {
       </div>
   );
 }
-
-
 
 export default App;
