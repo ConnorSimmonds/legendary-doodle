@@ -23,7 +23,7 @@ const App = () => {
           <div className="dialogue">
           <Avatar alt="Connor Simmonds" src="/images/avatar/1.jpg" className="dialogueAvatar"/>
           <Card className="dialogueCard">
-          <h3>My name is Connor Simmonds.<br></br>I'm a fourth year SWEN student at Victoria University of Wellington.</h3>
+          <h3>My name is Connor Simmonds.<br></br>This is a simple site to show off my GitHub projects.</h3>
           </Card>
           </div>
           <h4>Below are a few GitHub projects.</h4>
